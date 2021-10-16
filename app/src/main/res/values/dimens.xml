@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_note_cv_radius">10dp</dimen>
+    <dimen name="item_note_cv_elevation">10dp</dimen>
+    <dimen name="item_note_tv_note_title_text_size">20sp</dimen>
+    <dimen name="item_note_tv_note_title_width">0dp</dimen>
+    <dimen name="item_note_view_group_margin">16dp</dimen>
+    <dimen name="item_note_tv_note_text_size_text">16sp</dimen>
+</resources>
