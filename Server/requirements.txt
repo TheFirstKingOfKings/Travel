@@ -1,0 +1,20 @@
+Flask==2.0.2  # flask
+  itsdangerous==2.0.1  # itsdangerous>=2.0
+  Jinja2==3.0.2  # Jinja2>=3.0
+    MarkupSafe==2.0.1  # MarkupSafe>=2.0
+  click==8.0.3  # click>=7.1.2
+  Werkzeug==2.0.2  # Werkzeug>=2.0
+pip==20.0.2  # pip
+requests==2.22.0  # requests
+requests-unixsocket==0.2.0  # requests-unixsocket
+simplejson==3.16.0  # simplejson
+systemd-python==234  # systemd-python
+virtualenv==20.8.1  # virtualenv
+  six==1.14.0  # six<2,>=1.9.0
+  platformdirs==2.4.0  # platformdirs<3,>=2
+  distlib==0.3.3  # distlib<1,>=0.3.1
+  filelock==3.3.1  # filelock<4,>=3.0.0
+  backports.entry-points-selectable==1.1.0  # backports.entry-points-selectable>=1.0.4
+wheel==0.34.2  # wheel
+xkit==0.0.0  # xkit
+zipp==1.0.0  # zipp
