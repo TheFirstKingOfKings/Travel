@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="@dimen/item_note_view_group_margin"
+    android:layout_margin="@dimen/btn_radius_10_padding_top_bottom"
     app:cardCornerRadius="@dimen/item_note_cv_radius"
     app:cardElevation="@dimen/item_note_cv_elevation">
 
@@ -16,7 +16,7 @@
             android:id="@+id/tv_note_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/item_note_view_group_margin"
+            android:layout_margin="@dimen/btn_radius_10_padding_top_bottom"
             android:textColor="@color/design_default_color_primary_dark"
             android:textSize="@dimen/item_note_tv_note_text_size_text"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -33,7 +33,7 @@
             android:textStyle="bold"
             android:lines="1"
             android:textSize="@dimen/item_note_tv_note_title_text_size"
-            android:layout_margin="@dimen/item_note_view_group_margin"
+            android:layout_margin="@dimen/btn_radius_10_padding_top_bottom"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
