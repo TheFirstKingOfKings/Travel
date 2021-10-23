@@ -18,3 +18,6 @@ virtualenv==20.8.1  # virtualenv
 wheel==0.34.2  # wheel
 xkit==0.0.0  # xkit
 zipp==1.0.0  # zipp
+
+WTForms~=2.3.3
+overpy~=0.6

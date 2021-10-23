@@ -1,4 +1,12 @@
 from flask import Flask
+from config import Config
+from flask_sqlalchemy import SQLAlchemy
+
+basedir = './'
 
 app = Flask(__name__)
-from app import views
+app.config.from_object(Config)
+db = SQLAlchemy(app)
+
+from app import routes
+from app.database import entities
