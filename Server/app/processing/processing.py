@@ -61,13 +61,8 @@ class Processing:
     def take_decision(self):
         nmt = nominatim.Nominatim()
         areaId = nmt.query('Moscow, Russia').areaId()
-        overpass = Overpass()
         query = ovp.overpassQueryBuilder(area=areaId, elementType=['way', 'relation'], selector='"natural"="water"',
                                      includeGeometry=True)
-        #result = query(query)
-        #firstElement = result.elements()[0]
-        #firstElement.geometry()
-        print()
         # osm.ChangesetCreate({u"comment": u"My first test"})
         # print(osm.NodeCreate({u"lon": 57.74705, u"lat": 40.97366, u"tag": {}}))
         lat_ESB = self.pointA.get_lat()
@@ -150,7 +145,6 @@ class Processing:
                                 lowerCost = allCosts[wayOfTravel]
                             elif self.totalLength > 500 and wayOfTravel == 'plane':
                                 lowerCost = allCosts[wayOfTravel]
-
 
                 if self.wayOfTravel is not None:
                     self.count_cost_by_way_of_travel().add_cost_of_stages()\
