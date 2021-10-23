@@ -8,11 +8,18 @@
 
     <!-- Universal dimens-->
     <dimen name="fill_space">0dp</dimen>
+    <dimen name="padding">40dp</dimen>
+    <dimen name="text_size">16sp</dimen>
 
+    <!--shape -->
     <dimen name="btn_radius_10_padding_top_bottom">16dp</dimen>
+    <dimen name="btn_radius_10_padding_radius">10dp</dimen>
+    <dimen name="ed_radius_8_padding_left">12dp</dimen>
+    <dimen name="ed_radius_8_padding_stroke_width">1dp</dimen>
+    <dimen name="ed_radius_8_padding_radius">8dp</dimen>
 
     <!-- fragment travel easy-->
-    <dimen name="fragment_travel_layout_padding_bottom">40dp</dimen>
+    <dimen name="fragment_travel_layout_padding_bottom">@dimen/padding</dimen>
     <dimen name="fragment_travel_easy_iv_start_travel">88dp</dimen>
     <dimen name="fragment_travel_easy_tv_travel_easy_margin_top">70dp</dimen>
     <dimen name="fragment_travel_easy_tv_travel_easy_text_size">24sp</dimen>
@@ -21,9 +28,20 @@
     <dimen name="fragment_travel_easy_view_margin_start_end">24dp</dimen>
     <dimen name="fragment_travel_easy_btn_registration_margin_top">104dp</dimen>
     <dimen name="fragment_travel_easy_btn_registration_elevation">10dp</dimen>
-    <dimen name="fragment_travel_easy_btn_text_size">16sp</dimen>
+    <dimen name="fragment_travel_easy_btn_text_size">@dimen/text_size</dimen>
     <dimen name="fragment_travel_easy_btn_sign_in_margin_top">30dp</dimen>
 
-
+    <!-- fragment sign_in-->
+    <dimen name="fragment_sign_in_layout_padding_start_end">24dp</dimen>
+    <dimen name="fragment_sign_in_layout_padding_bottom">@dimen/padding</dimen>
+    <dimen name="fragment_sign_in_tv_margin_top">40dp</dimen>
+    <dimen name="fragment_sign_in_iv_sign_in_margin_top">65dp</dimen>
+    <dimen name="fragment_sign_in_et_width">@dimen/fill_space</dimen>
+    <dimen name="fragment_sign_in_et_height">50dp</dimen>
+    <dimen name="fragment_sign_in_et_margin_top">6dp</dimen>
+    <dimen name="fragment_sign_in_tv_password_margin_top">20dp</dimen>
+    <dimen name="fragment_sign_in_btn_forgot_password_margin_top">10dp</dimen>
+    <dimen name="fragment_sign_in_btn_sign_in_margin_top">73dp</dimen>
+    <dimen name="fragment_sign_in_view_text_size">@dimen/text_size</dimen>
 
 </resources>
