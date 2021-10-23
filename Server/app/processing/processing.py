@@ -1,13 +1,14 @@
 import datetime
 
-import overpy
-from overpy import Overpass, Element, Node, Way, Area
+
+#from overpy import Overpass, Element, Node, Way, Area
+
 from osmapi import OsmApi
 from OSMPythonTools import api,  nominatim, data, element
 from OSMPythonTools import overpass as ovp
 import osmnx as ox
 import networkx as nx
-import pandas as pd
+
 from app.processing.point import Point
 
 #api = Overpass()
@@ -53,6 +54,9 @@ class Processing:
         self.totalLength = self.pointA.get_distance(self.pointB)
         print(self.totalLength)
         return self
+
+    def get_date_range(self):
+        return self.dateEnd - self.dateStart
 
     def take_decision(self):
         nmt = nominatim.Nominatim()
@@ -140,7 +144,13 @@ class Processing:
                     lowerCost = allCosts[0]
                     for wayOfTravel in allCosts:
                         if allCosts[wayOfTravel] < lowerCost:
-                            lowerCost = allCosts[wayOfTravel]
+                            if self.desiredTime < standartHoursOnMarch and wayOfTravel == 'walk':
+                                lowerCost = allCosts[wayOfTravel]
+                            elif self.desiredTime > standartHoursOnMarch and wayOfTravel == 'car':
+                                lowerCost = allCosts[wayOfTravel]
+                            elif self.totalLength > 500 and wayOfTravel == 'plane':
+                                lowerCost = allCosts[wayOfTravel]
+
 
                 if self.wayOfTravel is not None:
                     self.count_cost_by_way_of_travel().add_cost_of_stages()\
@@ -149,4 +159,19 @@ class Processing:
             if self.desiredTime is not None and self.desiredTime > standartHoursOnMarch:
                 self.stageQuantity = self.desiredTime / standartHoursOnMarch
 
+        if self.stageQuantity is not None:
+            if self.desiredTime is not None:
 
+                if self.wayOfTravel is None:
+                    allCosts = self.count_travel_cost()
+                    lowerCost = allCosts[0]
+                    for wayOfTravel in allCosts:
+                        if allCosts[wayOfTravel] < lowerCost:
+                            lowerCost = allCosts[wayOfTravel]
+
+                if self.wayOfTravel is not None:
+                    self.count_cost_by_way_of_travel().add_cost_of_stages()\
+                        .count_time_by_way_of_travel().count()
+
+            if self.desiredTime is not None and self.desiredTime > standartHoursOnMarch:
+                self.stageQuantity = self.desiredTime / standartHoursOnMarch

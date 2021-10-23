@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+import json
+
+import requests
+
 from app import app
 from flask import request, redirect, g, session, flash
 
@@ -30,14 +34,10 @@ def login():
 
 @app.route('/routes/', methods=['GET'])
 def send_routes_available():
-
-    return {
-        'id': 1,
-        'length': 800,
-        'timeElapsed': 10,
-        'isPublic': True,
-        'interests': 1
-    }
+    data = None
+    with open('routes.json', 'r') as r:
+        data = json.load(data)
+    return requests.Response().json(data)
 
 @app.route('/routes/getRouteByParams', methods=['POST'])
 def getRouteByParams():
