@@ -37,3 +37,12 @@ http://172.17.0.2:5000/
 ![GitHub language count](https://img.shields.io/github/languages/count/TheFirstKingOfKings/Travel?style=for-the-badge)
 ![GitHub milestones](https://img.shields.io/github/milestones/all/TheFirstKingOfKings/Travel?style=for-the-badge)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/TheFirstKingOfKings/Travel?style=for-the-badge)
+
+## Contacts
+### Alexander Libertime <img altr="Telegram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@5.12.0/icons/telegram.svg" />@alexander_libertime alibertime@yandex.ru
+
+### Ragim Guseinov      <img altr="Telegram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@5.12.0/icons/telegram.svg" />@CCUBICC ragim.design@vk.com
+
+### Erik Shakirov       <img altr="Telegram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@5.12.0/icons/telegram.svg" />@ManyMayak esh-n@mail.ru
+
+### Andrey Kozlov      <img altr="Telegram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@5.12.0/icons/telegram.svg" />@ankoz2000 ankoz2000@mail.ru
