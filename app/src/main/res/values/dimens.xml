@@ -4,6 +4,26 @@
     <dimen name="item_note_cv_elevation">10dp</dimen>
     <dimen name="item_note_tv_note_title_text_size">20sp</dimen>
     <dimen name="item_note_tv_note_title_width">0dp</dimen>
-    <dimen name="item_note_view_group_margin">16dp</dimen>
     <dimen name="item_note_tv_note_text_size_text">16sp</dimen>
+
+    <!-- Universal dimens-->
+    <dimen name="fill_space">0dp</dimen>
+
+    <dimen name="btn_radius_10_padding_top_bottom">16dp</dimen>
+
+    <!-- fragment travel easy-->
+    <dimen name="fragment_travel_layout_padding_bottom">40dp</dimen>
+    <dimen name="fragment_travel_easy_iv_start_travel">88dp</dimen>
+    <dimen name="fragment_travel_easy_tv_travel_easy_margin_top">70dp</dimen>
+    <dimen name="fragment_travel_easy_tv_travel_easy_text_size">24sp</dimen>
+    <dimen name="fragment_travel_easy_tv_travelling_with_us_margin_top">7dp</dimen>
+    <dimen name="fragment_travel_easy_view_width">@dimen/fill_space</dimen>
+    <dimen name="fragment_travel_easy_view_margin_start_end">24dp</dimen>
+    <dimen name="fragment_travel_easy_btn_registration_margin_top">104dp</dimen>
+    <dimen name="fragment_travel_easy_btn_registration_elevation">10dp</dimen>
+    <dimen name="fragment_travel_easy_btn_text_size">16sp</dimen>
+    <dimen name="fragment_travel_easy_btn_sign_in_margin_top">30dp</dimen>
+
+
+
 </resources>

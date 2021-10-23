@@ -1,0 +1,11 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="10dp" />
+    <gradient
+        android:startColor="@color/medium_purple"
+        android:endColor="@color/indigo"
+        />
+    <padding
+        android:top="@dimen/btn_radius_10_padding_top_bottom"
+        android:bottom="@dimen/btn_radius_10_padding_top_bottom"/>
+</shape>
