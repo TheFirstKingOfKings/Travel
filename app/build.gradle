@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
+
 }
 
 apply plugin: 'kotlin-kapt'
@@ -11,7 +13,6 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        viewBinding.enabled = true
         applicationId "com.example.hackapp"
         minSdkVersion 21
         targetSdkVersion 31
@@ -57,14 +58,8 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
 
-    // Feature module Support
-    implementation("androidx.navigation:navigation-dynamic-features-fragment:$nav_version")
-
-    // Testing Navigation
-    androidTestImplementation("androidx.navigation:navigation-testing:$nav_version")
-
-    // Jetpack Compose Integration
-    implementation("androidx.navigation:navigation-compose:2.4.0-alpha10")
+    // Cicerone
+    implementation "ru.terrakok.cicerone:cicerone:$cicerone_version"
 
     // MarkWon
     implementation "io.noties.markwon:core:$markwon_version"

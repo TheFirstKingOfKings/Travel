@@ -7,5 +7,12 @@
     <string name="travel_easy">Путешествовать легко</string>
     <string name="travelling_with_us">Путешествуйте с нами с индивидуальным графиком именно для вас</string>
     <string name="sign_up">Зарегистрироваться</string>
-    <string name="sign_in">Есть аккаунт? Войти</string>
+    <string name="have_account">Есть аккаунт? Войти</string>
+
+    <!--fragment sign in -->
+    <string name="sign_in">Войти</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="not_account">Нет акканута? Зарегистрироваться</string>
 </resources>

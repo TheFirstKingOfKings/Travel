@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.note.add.view.AddNewNoteFragment">
+    tools:context=".presentation.traveleasy.view.TravelEasyFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -24,16 +24,12 @@
 
         <TextView
             android:id="@+id/tv_travel_easy"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/fragment_travel_easy_tv_travel_easy_margin_top"
-            android:fontFamily="@font/poppins_semi_bold"
             android:text="@string/travel_easy"
-            android:textColor="@color/bunting"
-            android:textSize="@dimen/fragment_travel_easy_tv_travel_easy_text_size"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iv_start_travel" />
+            app:layout_constraintTop_toBottomOf="@+id/iv_start_travel"
+            style="@style/TitlePage" />
 
         <TextView
             android:id="@+id/tv_travelling_with_us"
@@ -52,34 +48,22 @@
 
         <TextView
             android:id="@+id/btn_sign_up"
-            android:layout_width="@dimen/fragment_travel_easy_view_width"
-            android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/fragment_travel_easy_view_margin_start_end"
             android:layout_marginTop="@dimen/fragment_travel_easy_btn_registration_margin_top"
             android:layout_marginEnd="@dimen/fragment_travel_easy_view_margin_start_end"
-            android:background="@drawable/btn_radius_10"
-            android:elevation="@dimen/fragment_travel_easy_btn_registration_elevation"
-            android:fontFamily="@font/poppins_semi_bold"
             android:text="@string/sign_up"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/fragment_travel_easy_btn_text_size"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_travelling_with_us" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_travelling_with_us"
+            style="@style/btn" />
 
         <TextView
-            android:id="@+id/btn_sign_in"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/fragment_travel_easy_btn_sign_in_margin_top"
-            android:fontFamily="@font/poppins_light"
-            android:text="@string/sign_in"
-            android:textColor="@color/manatee"
-            android:textSize="@dimen/fragment_travel_easy_btn_text_size"
+            android:id="@+id/btn_have_account"
+            android:text="@string/have_account"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_sign_up" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_sign_up"
+            style="@style/tv_before_btn" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
