@@ -7,6 +7,7 @@ from flask import request, redirect, g, session, flash
 from app.database.entities import User
 from app.forms.login import LoginForm
 from app.processing.processing import Processing
+from app.strs import ways
 
 
 # LOG IN
@@ -45,10 +46,9 @@ def login():
 
 @app.route('/routes/', methods=['GET'])
 def send_routes_available():
-    data = None
-    with open("routes.json", 'r') as r:
-        data = json.load(r)
-    return data
+    data = json.loads(ways)
+    processingAlgorhytm = Processing(data).process()
+    return data[0]
 
 
 @app.route('/routes/getRouteByParams', methods=['POST'])

@@ -1,5 +1,5 @@
 import datetime
-
+import random
 
 #from overpy import Overpass, Element, Node, Way, Area
 
@@ -128,9 +128,11 @@ class Processing:
         return self
 
     def process(self):
-        standartHoursOnMarch = 5  # 1 hour stage
-        stageCountBeforeNightStage = 2
-
+        _standartHoursOnMarch = 5  # 1 hour stage
+        _stageCountBeforeNightStage = 2
+        if (self.pointB is None):
+            step = 0.0001
+            self.pointB = Point(random.randrange(37.3239, 37.6156, step), random.randrange(44.8908, 55.7522, step))
         if self.stageQuantity is None:
             if self.desiredTime is not None:
 
@@ -139,9 +141,9 @@ class Processing:
                     lowerCost = allCosts[0]
                     for wayOfTravel in allCosts:
                         if allCosts[wayOfTravel] < lowerCost:
-                            if self.desiredTime < standartHoursOnMarch and wayOfTravel == 'walk':
+                            if self.desiredTime < _standartHoursOnMarch and wayOfTravel == 'walk':
                                 lowerCost = allCosts[wayOfTravel]
-                            elif self.desiredTime > standartHoursOnMarch and wayOfTravel == 'car':
+                            elif self.desiredTime > _standartHoursOnMarch and wayOfTravel == 'car':
                                 lowerCost = allCosts[wayOfTravel]
                             elif self.totalLength > 500 and wayOfTravel == 'plane':
                                 lowerCost = allCosts[wayOfTravel]
@@ -150,8 +152,8 @@ class Processing:
                     self.count_cost_by_way_of_travel().add_cost_of_stages()\
                         .count_time_by_way_of_travel().count()
 
-            if self.desiredTime is not None and self.desiredTime > standartHoursOnMarch:
-                self.stageQuantity = self.desiredTime / standartHoursOnMarch
+            if self.desiredTime is not None and self.desiredTime > _standartHoursOnMarch:
+                self.stageQuantity = self.desiredTime / _standartHoursOnMarch
 
         if self.stageQuantity is not None:
             if self.desiredTime is not None:
@@ -167,5 +169,5 @@ class Processing:
                     self.count_cost_by_way_of_travel().add_cost_of_stages()\
                         .count_time_by_way_of_travel().count()
 
-            if self.desiredTime is not None and self.desiredTime > standartHoursOnMarch:
-                self.stageQuantity = self.desiredTime / standartHoursOnMarch
+            if self.desiredTime is not None and self.desiredTime > _standartHoursOnMarch:
+                self.stageQuantity = self.desiredTime / _standartHoursOnMarch
