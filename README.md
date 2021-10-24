@@ -38,11 +38,19 @@ http://172.17.0.2:5000/
 ![GitHub milestones](https://img.shields.io/github/milestones/all/TheFirstKingOfKings/Travel?style=for-the-badge)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/TheFirstKingOfKings/Travel?style=for-the-badge)
 
-## Contacts
-### Alexander Libertime <img altr="Telegram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@5.12.0/icons/telegram.svg" />@alexander_libertime alibertime@yandex.ru
+# Contacts
+## Команда :  « ИННОВАТОРЫ ».
 
-### Ragim Guseinov      <img altr="Telegram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@5.12.0/icons/telegram.svg" />@CCUBICC ragim.design@vk.com
+### Tech-writer :  Александр Маракуев.
+alibertime@yandex.ru
 
-### Erik Shakirov       <img altr="Telegram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@5.12.0/icons/telegram.svg" />@ManyMayak esh-n@mail.ru
+### Designer : Рагим Гусейнов.
+ragim.design@vk.com 
 
-### Andrey Kozlov      <img altr="Telegram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@5.12.0/icons/telegram.svg" />@ankoz2000 ankoz2000@mail.ru
+### Front - end : Эрик Шакиров.
+esh-n@mail.ru 
+
+### Back - end : Андрей Козлов.
+ankoz2000@mail.ru 
+
+
