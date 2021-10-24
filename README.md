@@ -39,18 +39,18 @@ http://172.17.0.2:5000/
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/TheFirstKingOfKings/Travel?style=for-the-badge)
 
 # Contacts
-## Команда :  « ИННОВАТОРЫ ».
+## Команда :  « ИННОВАТОРЫ »
 
-### Tech-writer :  Александр Маракуев.
+### Tech-writer :  Александр Маракуев
 alibertime@yandex.ru
 
-### Designer : Рагим Гусейнов.
+### Designer : Рагим Гусейнов
 ragim.design@vk.com 
 
-### Front - end : Эрик Шакиров.
+### Front - end : Эрик Шакиров
 esh-n@mail.ru 
 
-### Back - end : Андрей Козлов.
+### Back - end : Андрей Козлов
 ankoz2000@mail.ru 
 
 
