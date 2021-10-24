@@ -10,6 +10,7 @@ import osmnx as ox
 import networkx as nx
 
 from app.processing.point import Point
+from app.strs import ways
 
 #api = Overpass()
 osm = OsmApi(api="https://master.apis.dev.openstreetmap.org/",  username="vapewalker@mail.ru", password="13241111q")
@@ -43,8 +44,8 @@ class Processing:
     pointB                      = None
 
     def __init__(self, data):
-        self.pointA = Point(float(data['pointA'].split()[0]), float(data['pointA'].split()[1]))
-        self.pointB = Point(float(data['pointB'].split()[0]), float(data['pointB'].split()[1]))
+        self.pointA = Point(float(data[0]['pointA'].split()[0]), float(data[0]['pointA'].split()[1]))
+        self.pointB = Point(float(data[0]['pointB'].split()[0]), float(data[0]['pointB'].split()[1]))
 
     def toStr(self):
         return str(self.pointA) + ' ' + str(self.pointB) + ' ' + str(self.count_length().totalLength) + str(
@@ -91,8 +92,14 @@ class Processing:
         # return areaId
 
     def count_travel_cost(self):
-        ###
-        return {"car": 3, 'plane': 10, "train": 4}
+        self.totalCost = 0
+        allWays = []
+        returnObj = {}
+        for way in ways:
+            self.totalCost = way['price']
+            allWays.append(way)
+
+        return allWays
 
     def count_cost_by_way_of_travel(self):
         if self.wayOfTravel == 'walk':
@@ -130,14 +137,15 @@ class Processing:
     def process(self):
         _standartHoursOnMarch = 5  # 1 hour stage
         _stageCountBeforeNightStage = 2
-        if (self.pointB is None):
+        if self.pointB is None:
             step = 0.0001
             self.pointB = Point(random.randrange(37.3239, 37.6156, step), random.randrange(44.8908, 55.7522, step))
+        print(str(self.count_length()) + " - Length")
         if self.stageQuantity is None:
             if self.desiredTime is not None:
 
                 if self.wayOfTravel is None:
-                    allCosts = self.count_travel_cost()
+                    allCosts = [way for way in self.count_travel_cost()]
                     lowerCost = allCosts[0]
                     for wayOfTravel in allCosts:
                         if allCosts[wayOfTravel] < lowerCost:
